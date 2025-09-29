@@ -1,0 +1,7 @@
+@import url("../src/App.css");
+
+.info {
+  text-align: end;
+  padding: 3rem 1.3rem 0 40rem;
+  font-family: var(--fonte);
+}
