@@ -2,7 +2,7 @@ import "./Performance.css";
 
 export default function Performance() {
   return (
-    <section className="performance">
+    <section id="performance" className="performance">
       <div className="performance-container">
         <div className="performance-grid">
           {/* Card 1 - Pessoas Impactadas */}

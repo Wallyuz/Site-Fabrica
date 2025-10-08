@@ -10,13 +10,13 @@ export default function Footer() {
           {/* GREat */}
           <div className="partner-item">
             <a
-              href="https://great.uece.br/"
+              href="https://www.great.ufc.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="partner-link"
             >
               <div className="partner-logo">
-                <img src="../src/assets/great.jpg" alt="GREat" />
+                <img src="../src/assets/great.png" alt="GREat" />
               </div>
             </a>
           </div>
@@ -24,14 +24,14 @@ export default function Footer() {
           {/* Residência em Segurança da Informação */}
           <div className="partner-item">
             <a
-              href="https://residenciaseguranca.uece.br/"
+              href="http://rsi.dc.ufc.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="partner-link"
             >
               <div className="partner-logo">
                 <img
-                  src="../src/assets/Residencia.jpg"
+                  src="../src/assets/Residencia.png"
                   alt="Residência em Segurança da Informação"
                 />
               </div>
@@ -41,13 +41,13 @@ export default function Footer() {
           {/* DETIC */}
           <div className="partner-item">
             <a
-              href="https://detic.uece.br/"
+              href="https://www.uece.br/proplan/detic/"
               target="_blank"
               rel="noopener noreferrer"
               className="partner-link"
             >
               <div className="partner-logo">
-                <img src="../src/assets/detic.jpg" alt="DETIC" />
+                <img src="../src/assets/detic.png" alt="DETIC" />
               </div>
             </a>
           </div>

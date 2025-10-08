@@ -2,7 +2,7 @@ import "./Objectives.css";
 
 export default function Objectives() {
   return (
-    <section className="objectives">
+    <section id="objectives" className="objectives">
       <div className="objectives-container">
         <h1 className="objectives-title">
           <span className="title-orange">NOSSOS </span>

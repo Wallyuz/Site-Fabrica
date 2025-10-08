@@ -4,7 +4,7 @@ import LogoFabrica from "../src/assets/logo_fabrica.png";
 export default function Info() {
   return (
     <>
-      <div className="info">
+      <div id="about" className="info">
         <div className="logo">
           <img src={LogoFabrica} alt="Logo Fábrica de Testadores" />
         </div>

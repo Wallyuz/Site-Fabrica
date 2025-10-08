@@ -1,37 +1,185 @@
 @import url("../src/App.css");
 
-header {
+.header {
   position: relative;
   height: 80vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 70px;
 }
 
 .header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  display: block;
   filter: blur(8px);
+  z-index: 0;
 }
 
-.header-titles {
+/* Container dos logos no topo */
+.header-logos {
   position: absolute;
-  top: 30%;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3rem;
+  z-index: 2;
+}
+
+.logo-uece {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--branco);
+}
+
+.uece-icon {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ffd700, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.uece-text {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.uece-text a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.uece-text a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.uece-text img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-gesad {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--branco);
+}
+
+.logo-gesad a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.logo-gesad a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.logo-gesad img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.gesad-text {
+  font-family: var(--fonte-principal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--cor-principal), var(--laranja));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gesad-icon {
+  font-size: 2rem;
+  color: var(--cor-principal);
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Container principal do conteúdo */
+.header-content {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  padding-left: 4rem;
   transform: translate(-50%, -50%);
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
   width: 100%;
+  text-align: center;
 }
 
-.header-titles h1 {
-  color: var(--branco);
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+
+.main-title {
+  color: var(--cor-principal);
   font-family: var(--fonte-principal);
-  font-size: 3.4562rem;
+  font-size: 5.5rem;
+  font-weight: 900;
+  text-shadow: 0.2rem 0.2rem 0.8rem rgba(0, 0, 0, 0.8);
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--fonte-principal);
+  font-family: var(--fonte-principal);
+  font-size: 2.2rem;
   font-weight: 700;
-  text-shadow: 0.125rem 0.125rem 0.5rem rgba(0.5, 0.5, 0.5, 0.7);
-  margin: 0.2em 0;
+  margin-top: 2rem;
+  text-shadow: 0.15rem 0.15rem 0.6rem rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+/* Container dos ícones */
+.header-icons {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--branco);
 }
 
 /* Logo à esquerda */
@@ -82,6 +230,35 @@ header {
   .uece-text {
     font-size: 0.8rem;
   }
+
+  .uece-text img {
+    height: 38px;
+  }
+
+  .logo-gesad img {
+    height: 38px;
+  }
+}
+
+/* Responsividade para títulos principais */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .header-icons {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -97,5 +274,35 @@ header {
 
   .uece-text {
     font-size: 0.7rem;
+  }
+
+  .uece-text img {
+    height: 32px;
+  }
+
+  .logo-gesad img {
+    height: 32px;
+  }
+
+  .main-title {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .header-icons {
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

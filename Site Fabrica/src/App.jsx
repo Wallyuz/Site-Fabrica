@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
 import Info from "../Components/Info";
 import Objectives from "../Components/Objectives";
@@ -10,6 +11,7 @@ import Footer from "../Components/Footer";
 function App() {
   return (
     <>
+      <Navbar />
       <Header />
       <Info />
       <Objectives />
