@@ -17,7 +17,7 @@
 }
 
 .contacts-title {
-  font-family: var(--fonte-principal);
+  font-family: var(--terceira-fonte);
   font-size: 4rem;
   font-weight: 700;
   color: var(--cor-principal);
@@ -62,7 +62,7 @@
 }
 
 .contact-link {
-  font-family: var(--fonte-principal);
+  font-family: var(--quinta-fonte);
   font-size: 2rem;
   font-weight: 600;
   color: var(--cor-principal);
@@ -77,8 +77,8 @@
 }
 
 .contact-address {
-  font-family: var(--fonte-principal);
-  font-size: 1.8rem;
+  font-family: var(--quinta-fonte);
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--cor-principal);
   line-height: 1.6;
