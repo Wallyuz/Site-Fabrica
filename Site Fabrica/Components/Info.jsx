@@ -1,12 +1,11 @@
 import "./Info.css";
-import LogoFabrica from "../src/assets/logo_fabrica.png";
 
 export default function Info() {
   return (
     <>
       <div id="about" className="info">
         <div className="logo">
-          <img src={LogoFabrica} alt="Logo Fábrica de Testadores" />
+          <img src="/logo_fabrica.png" alt="Logo Fábrica de Testadores" />
         </div>
         <div className="text-content">
           <p>
