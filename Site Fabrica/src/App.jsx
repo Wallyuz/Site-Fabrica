@@ -5,7 +5,6 @@ import Info from "../Components/Info";
 import Objectives from "../Components/Objectives";
 import Performance from "../Components/Performance";
 import Team from "../Components/Team";
-import Contacts from "../Components/Contacts";
 import Footer from "../Components/Footer";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <Objectives />
       <Performance />
       <Team />
-      <Contacts />
       <Footer />
     </>
   );

@@ -1,146 +1,222 @@
 @import url("../src/App.css");
 
+/* Footer Principal */
 .footer {
-  background: #f5f5f5;
-  padding: 4rem 0 2rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+}
+
+.footer-main {
+  padding: 2rem 0 0rem 0;
 }
 
 .footer-container {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
-.footer-title {
-  font-family: var(--quinta-fonte);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--preto);
-  margin-bottom: 3rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.partners-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.column-title {
+  font-family: var(--quinta-fonte);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-principal);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid var(--cor-principal);
+  padding-bottom: 0.5rem;
+}
+
+/* Coluna 1 - Contatos */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--cor-principal);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-link {
+  font-family: var(--fonte-principal);
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--cor-principal);
+}
+
+.contact-text p {
+  font-family: var(--fonte-principal);
+  font-size: 0.95rem;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Coluna 2 - Parcerias */
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .partner-item {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.partner-link {
+.partner-item a {
   display: block;
-  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
-.partner-link:hover {
+.partner-item a:hover {
   transform: scale(1.05);
 }
 
 .partner-logo {
-  display: flex;
-  align-items: center;
-  padding-top: 2rem;
-  justify-content: center;
-  width: 350px;
-  height: 150px;
-  overflow: hidden;
-}
-
-.partner-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  max-width: 150px;
+  height: 50px;
   object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-/* Copyright */
-.footer-copyright {
-  border-top: 1px solid #ddd;
-  padding-top: 2rem;
-  margin-top: 2rem;
+.partner-logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
-.footer-copyright p {
+/* Rodapé de Copyright */
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright-content p {
   font-family: var(--fonte-principal);
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.85rem;
+  color: #cccccc;
   margin: 0;
 }
 
+
+
 /* Responsividade */
 @media (max-width: 1024px) {
-  .footer-title {
-    font-size: 2.5rem;
+  .footer-grid {
+    gap: 2.5rem;
   }
-
-  .partners-grid {
-    gap: 3rem;
+  
+  .column-title {
+    font-size: 1.1rem;
   }
-
-  .partner-logo {
-    width: 180px;
-    height: 90px;
+  
+  .contact-link,
+  .contact-text p {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
-  .footer {
-    padding: 3rem 0 2rem 0;
+  .footer-main {
+    padding: 3rem 0 1.5rem 0;
   }
-
-  .footer-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .partners-grid {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
-  .residencia-logo {
-    flex-direction: column;
-    gap: 1rem;
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
   }
-
-  .residencia-text {
-    text-align: center;
+  
+  .contact-item {
+    justify-content: center;
   }
-
-  .partner-logo {
-    width: 160px;
-    height: 80px;
+  
+  .partner-item {
+    justify-content: center;
+  }
+  
+  .partners-list {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .copyright-content {
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .footer-title {
-    font-size: 1.8rem;
+  .footer-main {
+    padding: 2rem 0 1rem 0;
   }
-
-  .partners-grid {
-    gap: 2rem;
+  
+  .footer-grid {
+    gap: 1.5rem;
   }
-
+  
+  .column-title {
+    font-size: 1rem;
+  }
+  
+  .contact-link,
+  .contact-text p {
+    font-size: 0.85rem;
+  }
+  
   .partner-logo {
-    width: 140px;
-    height: 70px;
+    max-width: 120px;
+    height: 40px;
   }
-
-  .footer-copyright p {
+  
+  .copyright-content p {
     font-size: 0.8rem;
+    text-align: center;
   }
 }

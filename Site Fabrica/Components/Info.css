@@ -5,13 +5,14 @@
   align-items: center;
   padding: 3rem 0 0 0;
   gap: 2rem;
-  font-family: var(--fonte-secundaria);
+  font-family: var(--fonte-secundaria
+  );
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .logo {
-  width: 31.25rem;
+  width: 25rem;
   height: auto;
 }
 

@@ -19,7 +19,7 @@ export default function Performance() {
                 <span className="title-blue">PESSOAS</span>
                 <span className="title-orange">IMPACTADAS</span>
               </h3>
-              <div className="card-number">291</div>
+              <div className="card-number">+200</div>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function Performance() {
                 <span className="title-blue">SOFTWARES</span>
                 <span className="title-orange">IMPACTADOS</span>
               </h3>
-              <div className="card-number">04</div>
+              <div className="card-number">05</div>
             </div>
           </div>
 
@@ -51,10 +51,10 @@ export default function Performance() {
             </div>
             <div className="card-content">
               <h3 className="card-title">
-                <span className="title-blue">PROJETOS</span>
+                <span className="title-blue">SERVIÇOS</span>
                 <span className="title-orange">REALIZADOS</span>
               </h3>
-              <div className="card-number">15</div>
+              <div className="card-number">05</div>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export default function Performance() {
                 <span className="title-blue">CURSOS</span>
                 <span className="title-orange">OFERECIDOS</span>
               </h3>
-              <div className="card-number">08</div>
+              <div className="card-number">06</div>
             </div>
           </div>
         </div>
