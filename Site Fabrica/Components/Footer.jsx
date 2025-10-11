@@ -46,17 +46,17 @@ export default function Footer() {
               <div className="partners-list">
                 <div className="partner-item">
                   <a href="https://www.great.ufc.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="/great.png" alt="GREat" className="partner-logo" />
+                    <img src="/Site-Fabrica/great.png" alt="GREat" className="partner-logo" />
                   </a>
                 </div>
                 <div className="partner-item">
                   <a href="http://rsi.dc.ufc.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="/Residencia.png" alt="Residência em Segurança da Informação" className="partner-logo" />
+                    <img src="/Site-Fabrica/Residencia.png" alt="Residência em Segurança da Informação" className="partner-logo" />
                   </a>
                 </div>
                 <div className="partner-item">
                   <a href="https://www.uece.br/proplan/detic/" target="_blank" rel="noopener noreferrer">
-                    <img src="/detic.png" alt="DETIC" className="partner-logo" />
+                    <img src="/Site-Fabrica/detic.png" alt="DETIC" className="partner-logo" />
                   </a>
                 </div>
               </div>
