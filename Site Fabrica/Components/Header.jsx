@@ -11,13 +11,15 @@ export default function Header() {
       <div className="header-container">
         
         {/* Logos institucionais */}
-        <div className="institution-logos">
-          <a href="https://www.uece.br/" target="_blank" rel="noopener noreferrer">
-            <img src="/Site-Fabrica/logo_uece.png" alt="UECE" className="inst-logo" />
-          </a>
-          <a href="https://gesaduece.com.br/pt" target="_blank" rel="noopener noreferrer">
-            <img src="/Site-Fabrica/logo_gesad.png" alt="GESAD" className="inst-logo" />
-          </a>
+        <div className="institution-logos-container">
+          <div className="institution-logos">
+            <a href="https://www.uece.br/" target="_blank" rel="noopener noreferrer">
+              <img src="/Site-Fabrica/logo_uece.png" alt="UECE" className="inst-logo" />
+            </a>
+            <a href="https://gesaduece.com.br/pt" target="_blank" rel="noopener noreferrer">
+              <img src="/Site-Fabrica/logo_gesad.png" alt="GESAD" className="inst-logo" />
+            </a>
+          </div>
         </div>
 
         {/* Conteúdo principal */}

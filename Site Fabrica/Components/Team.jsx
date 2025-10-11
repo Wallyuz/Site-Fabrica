@@ -13,7 +13,7 @@ export default function Team() {
           {/* Coordenador em destaque */}
           <div className="coordinator-card">
             <div className="member-photo coordinator-photo">
-              <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Ismayle Santos" />
+              <img src="/Site-Fabrica/ismayle.jpg" alt="Ismayle Santos" />
             </div>
             <div className="member-info">
               <h3 className="member-name">ISMAYLE SANTOS</h3>
@@ -37,7 +37,7 @@ export default function Team() {
             {/* Primeira linha */}
             <div className="member-card">
               <div className="member-photo">
-                <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Wallison" />
+                <img src="/Site-Fabrica/wallison.jpg" alt="Wallison" />
               </div>
               <div className="member-info">
                 <h3 className="member-name">WALLISON AQUINO</h3>
@@ -54,7 +54,7 @@ export default function Team() {
 
             <div className="member-card">
               <div className="member-photo">
-                <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Pedro" />
+                <img src="/Site-Fabrica/pedro.jpeg" alt="Pedro" />
               </div>
               <div className="member-info">
                 <h3 className="member-name">PEDRO HENRIQUE</h3>
@@ -71,7 +71,7 @@ export default function Team() {
 
             <div className="member-card">
               <div className="member-photo">
-                <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Letícia" />
+                <img src="/Site-Fabrica/leticia.jpeg" alt="Letícia" />
               </div>
               <div className="member-info">
                 <h3 className="member-name">LETÍCIA CARNEIRO</h3>
@@ -89,7 +89,7 @@ export default function Team() {
             {/* Segunda linha */}
             <div className="member-card">
               <div className="member-photo">
-                <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Wesley" />
+                <img src="/Site-Fabrica/wesley.jpg" alt="Wesley" />
               </div>
               <div className="member-info">
                 <h3 className="member-name">WESLEY MACIEL</h3>
@@ -107,7 +107,7 @@ export default function Team() {
             <div className="member-card">
               <div className="member-photo">
                 <img
-                  src="/Site-Fabrica/placeholder-avatar.svg"
+                  src="/Site-Fabrica/hidelbrando.jpg"
                   alt="Hidelbrando"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Team() {
 
             <div className="member-card">
               <div className="member-photo">
-                <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Larissa" />
+                <img src="/Site-Fabrica/larissa.jpg" alt="Larissa" />
               </div>
               <div className="member-info">
                 <h3 className="member-name">LARISSA KELLY</h3>
@@ -145,7 +145,7 @@ export default function Team() {
             <div className="member-card center-card">
               <div className="member-photo">
                 <img
-                  src="/Site-Fabrica/placeholder-avatar.svg"
+                  src="/Site-Fabrica/gabriel.jpg"
                   alt="GABRIEL PINHEIRO"
                 />
               </div>

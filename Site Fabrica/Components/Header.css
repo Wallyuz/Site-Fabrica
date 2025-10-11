@@ -49,10 +49,19 @@
 }
 
 /* Logos institucionais */
-.institution-logos {
+.institution-logos-container {
   position: absolute;
-  top: -50px;
+  top: -30px;
   right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.institution-logos {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -142,16 +151,25 @@
 @media (max-width: 768px) {
   .header {
     height: 90vh;
+    padding-top: 40px;
   }
   
   .header-container {
     padding: 0 1.5rem;
   }
   
-  .institution-logos {
+  .institution-logos-container {
     position: static;
     margin-bottom: 2rem;
-    justify-content: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 0.8rem 1rem;
+  }
+
+  .institution-logos {
+    justify-content: space-between;
+    width: 100%;
   }
   
   .inst-logo {
@@ -179,14 +197,21 @@
 @media (max-width: 480px) {
   .header {
     height: 85vh;
+    padding-top: 20px;
   }
   
   .header-container {
     padding: 0 1rem;
   }
   
+  .institution-logos-container {
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+  }
+
   .institution-logos {
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     gap: 1rem;
   }
   
