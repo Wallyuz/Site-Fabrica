@@ -1,6 +1,89 @@
 import "./Team.css";
+import { useEffect, useRef } from "react";
 
 export default function Team() {
+  const carouselRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    const container = containerRef.current;
+    if (!carousel || !container) return;
+
+    let intervalId;
+
+    const startAutoScroll = () => {
+      // No mobile, o scroll acontece no container, no desktop no grid
+      
+      let scrollAmount = 0;
+      
+      const autoScroll = () => {
+        // Detecta se é mobile baseado na largura da tela atual
+        const isMobile = window.innerWidth <= 768;
+        const currentScrollElement = isMobile ? container : carousel;
+        const totalCards = 7;
+        
+        if (isMobile) {
+          // Mobile: mostra um card por vez, centralizado
+          const containerWidth = currentScrollElement.offsetWidth;
+          const cardWidth = 280; // largura do card no mobile
+          const gap = 24; // 1.5rem gap
+          
+          // Calcula qual card está sendo mostrado atualmente
+          const currentCardIndex = Math.round(scrollAmount / (cardWidth + gap));
+          const nextCardIndex = (currentCardIndex + 1) % totalCards;
+          
+          // Centraliza o próximo card
+          const cardCenterOffset = (containerWidth - cardWidth) / 2;
+          scrollAmount = nextCardIndex * (cardWidth + gap) - cardCenterOffset;
+          
+          // Garante que o scroll não seja negativo
+          if (scrollAmount < 0) scrollAmount = 0;
+          
+        } else {
+          // Desktop: lógica original  
+          const cardWidth = 280;
+          scrollAmount += cardWidth;
+          
+          const maxScroll = (totalCards - 2) * cardWidth;
+          if (scrollAmount >= maxScroll) {
+            scrollAmount = 0;
+          }
+        }
+        
+        currentScrollElement.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      };
+
+      // Auto scroll a cada 3 segundos
+      intervalId = setInterval(autoScroll, 3000);
+    };
+
+    const handleResize = () => {
+      // Limpa o interval anterior e reinicia com as novas dimensões
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      // Pequeno delay para evitar múltiplas execuções durante o resize
+      setTimeout(startAutoScroll, 100);
+    };
+
+    // Inicia o auto scroll
+    startAutoScroll();
+
+    // Adiciona listener para resize
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section id="team" className="team">
       <div className="team-header">
@@ -33,7 +116,8 @@ export default function Team() {
 
       <div className="team-members">
         <div className="team-container">
-          <div className="members-grid">
+          <div className="carousel-container" ref={containerRef}>
+            <div className="members-grid" ref={carouselRef}>
             {/* Primeira linha */}
             <div className="member-card">
               <div className="member-photo">
@@ -164,6 +248,7 @@ export default function Team() {
           </div>
         </div>
       </div>
+    </div>
     </section>
   );
 }
