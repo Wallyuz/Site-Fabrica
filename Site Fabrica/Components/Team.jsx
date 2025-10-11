@@ -40,7 +40,7 @@ export default function Team() {
                 <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Wallison" />
               </div>
               <div className="member-info">
-                <h3 className="member-name">WALLISON</h3>
+                <h3 className="member-name">WALLISON AQUINO</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/wallison-aquino-5ab2931aaq/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
@@ -57,7 +57,7 @@ export default function Team() {
                 <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Pedro" />
               </div>
               <div className="member-info">
-                <h3 className="member-name">PEDRO</h3>
+                <h3 className="member-name">PEDRO HENRIQUE</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/pedro-henrique-rocha-dos-santos-nonato-a71802227/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
@@ -74,7 +74,7 @@ export default function Team() {
                 <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Letícia" />
               </div>
               <div className="member-info">
-                <h3 className="member-name">LETÍCIA</h3>
+                <h3 className="member-name">LETÍCIA CARNEIRO</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/let%C3%ADcia-carneiro-61b50821a/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
@@ -92,7 +92,7 @@ export default function Team() {
                 <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Wesley" />
               </div>
               <div className="member-info">
-                <h3 className="member-name">WESLEY</h3>
+                <h3 className="member-name">WESLEY MACIEL</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/wesley-maciel-975322170/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
@@ -112,7 +112,7 @@ export default function Team() {
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">HIDELBRANDO</h3>
+                <h3 className="member-name">HIDELBRANDO ISRAEL</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/hildebrando-israel/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
@@ -129,7 +129,7 @@ export default function Team() {
                 <img src="/Site-Fabrica/placeholder-avatar.svg" alt="Larissa" />
               </div>
               <div className="member-info">
-                <h3 className="member-name">LARISSA</h3>
+                <h3 className="member-name">LARISSA KELLY</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/lari-kelly/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/Site-Fabrica/linkedin-icon.svg" alt="LinkedIn" />
