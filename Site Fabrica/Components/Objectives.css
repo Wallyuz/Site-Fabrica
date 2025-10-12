@@ -52,6 +52,7 @@
   padding: 1.5rem 0;
 }
 
+
 .objective-number {
   color: var(--cor-principal);
   font-family: var(--fonte-principal);
@@ -69,6 +70,17 @@
   margin: 0;
 }
 
+.objective-textOne {
+  color: var(--branco);
+  font-family: var(--fonte-secundaria);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-left: 0.4rem;
+  margin: 0;
+  text-align: justify;
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
   .objectives-title {
@@ -81,6 +93,11 @@
 
   .objective-text {
     font-size: 1.3rem;
+  }
+
+  .objective-textOne {
+    font-size: 1.3rem;
+    padding-left: 0.3rem;
   }
 }
 
@@ -111,6 +128,11 @@
   .objective-text {
     font-size: 1.2rem;
   }
+
+  .objective-textOne {
+    font-size: 1.2rem;
+    padding-left: 0.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -133,5 +155,11 @@
   .objective-text {
     font-size: 1.1rem;
     text-align: left;
+  }
+
+  .objective-textOne {
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 0;
   }
 }

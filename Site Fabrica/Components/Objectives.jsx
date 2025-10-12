@@ -12,8 +12,8 @@ export default function Objectives() {
         <div className="objectives-list">
           <div className="objective-item">
             <span className="objective-number">01.</span>
-            <p className="objective-text">
-              Promover a formação de recursos humanos.
+            <p className="objective-textOne">
+               Promover a formação de recursos humanos.
             </p>
           </div>
 
