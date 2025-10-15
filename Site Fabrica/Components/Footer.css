@@ -135,6 +135,10 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.youtube-icon {
+  color: var(--cor-principal);
+}
+
 .social-item:hover .github-icon {
   color: #fff;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));

@@ -89,6 +89,32 @@ export default function Footer() {
                     LinkedIn
                   </a>
                 </div>
+                
+                <div className="contact-item">
+                  <div className="contact-icon youtube-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YouTube">
+                      <path d="M23.498 6.186a3.019 3.019 0 00-2.136-2.119C19.653 3.5 12 3.5 12 3.5s-7.653 0-9.393.567A3.019 3.019 0 00.502 6.186 31.9 31.9 0 000 12a31.9 31.9 0 00.502 5.814 3.019 3.019 0 002.105 2.119C4.347 20.5 12 20.5 12 20.5s7.653 0 9.393-.567a3.02 3.02 0 002.105-2.119A31.9 31.9 0 0024 12a31.9 31.9 0 00-.502-5.814z" fill="currentColor"/>
+                      <path d="M9.75 15.02V8.98L15.5 12l-5.75 3.02z" fill="#FFFFFF"/>
+                    </svg>
+                  </div>
+                  <a href="https://www.youtube.com/@FabricadeTestadores" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    YouTube
+                  </a>
+                </div>
+
+                <div className="contact-item">
+                  <div className="contact-icon instagram-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.5" />
+                      <circle cx="12" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.5" />
+                      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                    </svg>
+                  </div>
+                  <a href="https://www.instagram.com/gesad.uece/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    Instagram - GESAD
+                  </a>
+                </div>
+
               </div>
             </div>
 
